@@ -28,14 +28,24 @@ export const getStaticProps = async (context) => {
     const response = await axios.get(
       "https://jsonplaceholder.typicode.com/users/" + id
     );
+    console.log(response.data);
+    if (!response.data) {
+      return {
+        notFound: true,
+      };
+    }
     return {
       props: { ninja: response.data },
     };
   } catch (error) {
     console.error(error);
+    return {
+      notFound: true,
+    };
   }
   return {
     props: { ninja: {} },
+    notFound: true,
   };
 };
 

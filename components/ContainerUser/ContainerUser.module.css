@@ -4,6 +4,7 @@
     display: block;
     margin: 20px 10px;
     border-left: 8px solid #fff;
+    width: 100%;
   }
   .single:hover {
     border-left: 8px solid #4979ff;

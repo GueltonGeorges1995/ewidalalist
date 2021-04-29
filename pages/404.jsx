@@ -17,10 +17,10 @@ export default function NotFound() {
       <h1>Oppps ...</h1>
       <h2>That page doesn't exist </h2>
       <p>
-        Go back to the{" "}
+        Go back to the
         <Link href="/">
           <a>Homepage</a>
-        </Link>{" "}
+        </Link>
       </p>
     </div>
   );

@@ -42,3 +42,12 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+.d-flex {
+  display: flex;
+}
+.just-cont-around {
+  justify-content: space-around;
+}
+.w-100 {
+  width: 100%;
+}
