@@ -30,20 +30,20 @@ export default function Ninjas({ ninjas }) {
         <meta name="keywords" content="ninjas" />
       </Head>
       <h1>All ninjas</h1>
-      {/* {ninjas.map((ninja) => (
+      {ninjas.map((ninja) => (
         <Link key={ninja.id} href={`/ninjas/${ninja.id}`}>
           <a className={styles.single}>
             <h3>{ninja.name}</h3>
           </a>
         </Link>
-      ))} */}
-      {users.map((user) => (
+      ))}
+      {/* {users.map((user) => (
         <Link key={user.id} href={`/ninjas/${user.id}`}>
           <a className={styles.single}>
             <h3>{user.name}</h3>
           </a>
         </Link>
-      ))}
+      ))} */}
     </>
   );
 }
